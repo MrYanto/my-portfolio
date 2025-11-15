@@ -13,7 +13,7 @@ import {
 
 const Navbar = () => {
   return (
-    <nav className='fixed top-0 right-0 left-0 z-50 m-4 flex w-[calc(100%-32px)] items-center justify-between rounded-full bg-[#00000066] px-6 backdrop-blur-2xl md:mx-auto md:w-fit lg:mt-8 lg:px-8'>
+    <nav className='fixed top-0 right-0 left-0 z-50 m-4 flex w-[100%-32px] items-center justify-between rounded-full bg-[#00000066] px-6 backdrop-blur-2xl md:mx-auto md:w-fit lg:mt-8 lg:px-8'>
       <ul className='flex items-center gap-4'>
         {/* MOBILE: HOME LINK */}
         <li className='p-2 md:hidden'>
@@ -40,7 +40,12 @@ const Navbar = () => {
       <div className='relative z-50'>
         <Sheet>
           <SheetTrigger asChild>
-            <Menu aria-label='open menu' className='md:hidden' size={24} />
+            <button
+              className='inline-flex items-center justify-center p-2 md:hidden'
+              aria-label='Open menu'
+            >
+              <Menu size={24} />
+            </button>
           </SheetTrigger>
 
           <SheetContent side='top'>

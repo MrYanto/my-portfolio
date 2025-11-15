@@ -44,6 +44,10 @@ const customTextPlugin = plugin(({ addUtilities }) => {
 export default {
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)', 'sans-serif'], // Default font
+        charm: ['var(--font-charm)', 'charm'], // Custom font class
+      },
       animation: {
         marquee: 'marquee var(--duration) linear infinite',
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',

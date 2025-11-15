@@ -4,7 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-
 /* ---------------------------------------- */
 /* Foundations: Typography, Colors, Radius, Spacing */
 /* ---------------------------------------- */
@@ -71,10 +70,10 @@
   --color-neutral-900: #181d27;
   --color-neutral-950: #0a0d12;
 
-  --color-primary-100: #e5f4fb;
-  --color-primary-200: #6fcfff;
-  --color-primary-300: #0093dd;
-  --color-primary-400: #050a1b;
+  --color-primary-100: #aaf3ff;
+  --color-primary-200: #43afc0;
+  --color-primary-300: #149bb0;
+  --color-primary-400: #075864;
 
   --color-base-white: #ffffff;
   --color-base-background: #000000;
@@ -198,8 +197,7 @@ body {
 
 @layer components {
   .custom-container {
-    margin: 0 auto;
-    @apply max-w-300 px-30;
+    @apply mx-auto max-w-360 px-2 lg:px-30;
   }
 }
 

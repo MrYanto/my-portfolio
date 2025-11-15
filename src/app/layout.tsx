@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { Charm } from 'next/font/google';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -14,17 +15,20 @@ const inter = Inter({
   variable: '--font-inter',
   display: 'swap',
 });
-
+const charm = Charm({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-charm',
+  display: 'swap',
+});
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={clsx(inter.variable, 'scroll-smooth')}>
-      <body className="antialiased font-sans">
-        {children}
-      </body>
+    <html lang='en' className={clsx(charm.variable, 'scroll-smooth')} >
+      <body className={clsx(inter.className, 'antialiased')}>{children}</body>
     </html>
   );
 }
