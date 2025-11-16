@@ -55,7 +55,7 @@ export default {
       keyframes: {
         marquee: {
           from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(calc(-100% - var(--gap)))' },
+          to: { transform: 'translateX(-60%)' },
         },
         'marquee-vertical': {
           from: { transform: 'translateY(0)' },

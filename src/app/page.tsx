@@ -1,3 +1,4 @@
+import About from './home/partials/about';
 import Hero from './home/partials/hero';
 import Navbar from './home/partials/navbar';
 
@@ -5,9 +6,10 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <main className='custom-container'>
+      <main>
         {/* Hero Section */}
         <Hero />
+        <About />
       </main>
     </>
   );

@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { navigationData } from '../../constants/navigation-data';
+import { navigationData } from '../../../constants/navigation-data';
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import {
