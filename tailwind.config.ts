@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss';
 import plugin from 'tailwindcss/plugin';
+import scrollbar from 'tailwind-scrollbar';
 
 const textSizes = {
   'display-3xl': '--text-display-3xl',
@@ -64,5 +65,5 @@ export default {
       },
     },
   },
-  plugins: [customTextPlugin],
+  plugins: [customTextPlugin, scrollbar],
 } satisfies Config;

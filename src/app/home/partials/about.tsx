@@ -5,8 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { aboutCardsData } from '@/constants/about/about-cards-data';
 import AboutCard from '@/components/about-card';
-import { div } from 'motion/react-client';
-import { clamp } from 'motion';
 
 const About = () => {
   return (
@@ -14,7 +12,7 @@ const About = () => {
       <Marquee />
       <div className='custom-container flex flex-col gap-12 lg:gap-24'>
         {/* Opening */}
-        <div className='mt-10 flex flex-col justify-between gap-6 lg:mt-20 lg:flex-row'>
+        <div className='flex flex-col justify-between gap-6 lg:flex-row'>
           <h2 className='lg:text-display-xl text-display-md font-bold'>
             I turn ideas and designs into functional, <br /> accessible, and
             performant websites <br />{' '}
