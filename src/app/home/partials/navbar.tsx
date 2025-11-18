@@ -42,7 +42,6 @@ const Navbar = () => {
           <SheetTrigger asChild>
             <button
               className='inline-flex items-center justify-center p-2 md:hidden'
-              aria-label='Open menu'
             >
               <Menu size={24} />
             </button>

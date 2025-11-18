@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Hero = () => {
   return (
     <section
-      className='flex min-h-dvh flex-col justify-between lg:flex-row-reverse custom-container'
+      className='flex h-fit flex-col justify-between lg:flex-row-reverse px-2 lg:px-30'
       id='hero'
     >
       {/* Background */}
@@ -63,7 +63,7 @@ const Hero = () => {
       </div>
 
       {/* left side & bottom-mobile*/}
-      <div className='flex max-w-[684px] h-fit flex-7 basis-80 flex-col gap-8 lg:translate-y-[227px] lg:gap-[62px]'>
+      <div className='flex max-w-[684px] h-fit flex-7 basis-80 flex-col gap-8 lg:mt-[227px] lg:gap-[62px]'>
         {/* Text */}
         <div className='flex flex-col gap-4 lg:gap-8'>
           <p className='text-md lg:text-xl'>Hi, I'm Edwin Anderson</p>
