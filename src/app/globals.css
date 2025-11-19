@@ -197,7 +197,7 @@ body {
 
 @layer components {
   .custom-container {
-    @apply mx-auto max-w-360 px-2 py-10 lg:py-20 lg:px-30;
+    @apply mx-auto max-w-360 px-4 py-10 lg:py-20 lg:px-30;
   }
 }
 

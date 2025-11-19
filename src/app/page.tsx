@@ -3,6 +3,7 @@ import Hero from './home/partials/hero';
 import Navbar from './home/partials/navbar';
 import TechStack from './home/partials/techStack';
 import Skill from './home/partials/skill';
+import Portfolio from './home/partials/portfolio';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         <About />
         <TechStack />
         <Skill />
+        <Portfolio />
       </main>
     </>
   );
