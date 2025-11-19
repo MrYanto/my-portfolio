@@ -60,8 +60,8 @@ const Skill = () => {
         </p>
       </div>
 
-      <div className='bg-base-background grid grid-cols-3 border border-neutral-900 p-6'>
-        <div>
+      <div className='bg-base-background grid grid-cols-[1fr_66px_66px] md:grid-cols-3 border border-neutral-900 p-6'>
+        <div className=''>
           <h3 className='lg:text-display-xs py-xs px-lg lg:py-md lg:px-3xl flex h-[72px] items-center border-b border-neutral-900 font-bold'>
             Skill
           </h3>
@@ -78,7 +78,10 @@ const Skill = () => {
             With Me
           </h3>
           {skillsData.map((_, index) => (
-            <div className='px-lg lg:px-3xl py-xs flex h-[72px] items-center border-b border-white/40'>
+            <div
+              className='px-lg lg:px-3xl py-xs flex h-[72px] items-center border-b border-white/40'
+              key={index}
+            >
               <Image key={index} src={CheckIcon} alt='Check Icon' />
             </div>
           ))}
@@ -93,6 +96,7 @@ const Skill = () => {
                 'px-lg lg:px-3xl py-xs flex h-[72px] items-center border-b border-neutral-900',
                 index === skillsData.length - 1 && 'border-0'
               )}
+              key={index}
             >
               <Image key={index} src={CrossIcon} alt='Cross Icon' />
             </div>
