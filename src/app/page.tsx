@@ -4,6 +4,7 @@ import Navbar from './home/partials/navbar';
 import TechStack from './home/partials/techStack';
 import Skill from './home/partials/skill';
 import Portfolio from './home/partials/portfolio';
+import TechJourney from './home/partials/techJourney';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <TechStack />
         <Skill />
         <Portfolio />
+        <TechJourney />
       </main>
     </>
   );
