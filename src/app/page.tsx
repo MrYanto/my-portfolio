@@ -6,6 +6,7 @@ import Skill from './home/partials/skill';
 import Portfolio from './home/partials/portfolio';
 import TechJourney from './home/partials/techJourney';
 import Testimonial from './home/partials/testimonial';
+import FAQ from './home/partials/FAQ';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         <Portfolio />
         <TechJourney />
         <Testimonial />
+        <FAQ />
       </main>
     </>
   );
