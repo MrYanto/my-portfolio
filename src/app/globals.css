@@ -231,3 +231,7 @@ img {
   touch-action: none; /* Disable touch gestures */
   -webkit-user-select: none; /* For Safari */
 }
+
+p {
+  @apply text-sm lg:text-md text-neutral-400
+}

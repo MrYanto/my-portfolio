@@ -28,7 +28,7 @@ const TechJourneyCard = ({ brand }: brandData) => {
         reusable code to enhance user experience and scalability.
       </p>
       {/* Brand Image */}
-      {brand && <Image src={brand || null} alt={`${brand}-icon`} />}
+      {brand && <Image src={brand || null} alt={`${brand}-icon`} className='pointer-events-none'/>}
     </div>
   );
 };

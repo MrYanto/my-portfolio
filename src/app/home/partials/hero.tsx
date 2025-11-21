@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Hero = () => {
   return (
     <section
-      className='flex h-fit flex-col justify-between lg:flex-row-reverse px-2 lg:px-30'
+      className='flex h-fit flex-col justify-between lg:flex-row-reverse gap-6 lg:gap-0 px-2 lg:px-30'
       id='hero'
     >
       {/* Background */}

@@ -5,12 +5,13 @@ import TechStack from './home/partials/techStack';
 import Skill from './home/partials/skill';
 import Portfolio from './home/partials/portfolio';
 import TechJourney from './home/partials/techJourney';
+import Testimonial from './home/partials/testimonial';
 
 const Home = () => {
   return (
     <>
       <Navbar />
-      <main>
+      <main className='overflow-hidden'>
         {/* Hero Section */}
         <Hero />
         <About />
@@ -18,6 +19,7 @@ const Home = () => {
         <Skill />
         <Portfolio />
         <TechJourney />
+        <Testimonial />
       </main>
     </>
   );
