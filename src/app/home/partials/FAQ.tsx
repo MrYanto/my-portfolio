@@ -13,7 +13,7 @@ import { FAQdata } from '../../../constants/FAQ-data';
 
 const FAQ = () => {
   return (
-    <section className='custom-container flex flex-col items-start'>
+    <section className='custom-container flex flex-col items-start' id='faq'>
       <Carousel className='flex w-full flex-col gap-6 lg:gap-12'>
         <div className='flex w-full flex-col items-center justify-between lg:flex-row'>
           <div className='flex flex-col gap-4'>

@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { cn } from '../lib/utils';
 import Image from 'next/image';
 import { FAQtype } from '../constants/FAQ-data';
 
 const FAQcard = ({ question, answer }: FAQtype) => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
+
+  useEffect(() => {
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+      setShow(false);
+    }
+  }, []);
 
   return (
     <div
@@ -43,7 +49,7 @@ const FAQcard = ({ question, answer }: FAQtype) => {
           </div>
         </div>
       ) : (
-        <div className='h-full flex flex-col justify-between'>
+        <div className='flex h-full flex-col justify-between'>
           <Image
             src='/icons/message.svg'
             width={40}

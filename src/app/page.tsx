@@ -7,6 +7,7 @@ import Portfolio from './home/partials/portfolio';
 import TechJourney from './home/partials/techJourney';
 import Testimonial from './home/partials/testimonial';
 import FAQ from './home/partials/FAQ';
+import Footer from './home/partials/footer';
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
         <Testimonial />
         <FAQ />
       </main>
+      <Footer/>
     </>
   );
 };
